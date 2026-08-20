@@ -88,20 +88,22 @@ while True:
     print("2 - Listar aviões cadastrados na fila")
     print("3 - Decolar avião")
     print("4 - Listar aviões que já decolaram")
-    print("7 - Retornar avião à fila")
-    print("5 - Sair")
+    print("5 - Retornar avião à fila")
+    print("6 - Sair")
 
     menu = input("Escolha a opção desejada: ")
 
     if menu == "1":
         cadastrar_aviao()
     elif menu == "2":
-        decolar_aviao()
+        listar_cadastrados()
     elif menu == "3":
-        listar_decolados()
-    elif menu == "7":
-        retornar_aviao_fila()
+        decolar_aviao()
     elif menu == "4":
+        listar_decolados()
+    elif menu == "5":
+        retornar_aviao_fila()
+    elif menu == "6":
         print("Programa finalizado.")
         break
     else:
